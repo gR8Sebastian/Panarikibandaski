@@ -1,0 +1,19 @@
+<footer class="footer-slim">
+    <div>
+        <p>
+            <a href="mailto:info@kibandaski.com">info@kibandaski.com</a>
+            <span>|</span>
+            <a href="tel:+2541234567890">+254 123-456-7890</a>
+        </p>
+        <div class="footer-socials">
+            <a href="https://instagram.com/" aria-label="Instagram" target="_blank" rel="noopener"><img src="instagram-icon.svg" alt="Instagram" /></a>
+            <a href="https://facebook.com/" aria-label="Facebook" target="_blank" rel="noopener"><img src="facebook-icon.svg" alt="Facebook" /></a>
+        </div>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="panari.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="bookings.html">Bookings</a>
+        </nav>
+        <small>&copy; 2025 Villa Rosa Kibandaski.</small>
+    </div>
+</footer>

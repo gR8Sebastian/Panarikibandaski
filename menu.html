@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Villa Rosa Kibandaski menu: Smocha, Fruit Salad, Nyama Choma, Chapati, and more authentic Kenyan dishes with prices.">
+    <link rel="shortcut icon" href="logoI.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu | Villa Rosa Kibandaski</title>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+        <nav class="nav-main" aria-label="Main Navigation">
+            <div class="logo">
+                <a href="index.html" aria-label="Home">
+                    <img src="logoI.png" alt="Villa Rosa Kibandaski Logo">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" aria-current="page">Menu</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section id="menu" class="menu-section animated fade-in-up">
+            <h1 class="menu-title">Our Menu</h1>
+            <p class="menu-description">
+                Handcrafted Kenyan delicacies made fresh — explore our bestsellers and house specials!
+            </p>
+            <div class="menu-items-grid">
+                <div class="menu-item-card">
+                    <img class="menu-card-image" src="smocha.jpg" alt="Smocha: Kenyan street food with a crisp touch of sauces" loading="lazy">
+                    <div class="menu-card-body">
+                        <div class="menu-card-title">Smocha</div>
+                        <div class="menu-card-desc">Made with a crisp touch of sauces.</div>
+                        <div class="menu-card-price">Ksh 150</div>
+                    </div>
+                </div>
+                <div class="menu-item-card">
+                    <img class="menu-card-image" src="salad.jpg" alt="Fruit Salad: Slices of several fruits and vegetables" loading="lazy">
+                    <div class="menu-card-body">
+                        <div class="menu-card-title">Fruit Salad</div>
+                        <div class="menu-card-desc">A hearty mix of several fruits and vegetables.</div>
+                        <div class="menu-card-price">Ksh 120</div>
+                    </div>
+                </div>
+                <div class="menu-item-card">
+                    <img class="menu-card-image" src="elena-leya-DBVIb_rWUKw-unsplash.jpg" alt="Nyama Choma: Grilled meat, a Kenyan barbecue favorite" loading="lazy">
+                    <div class="menu-card-body">
+                        <div class="menu-card-title">Nyama Choma</div>
+                        <div class="menu-card-desc">Grilled meat, a Kenyan barbecue favorite.</div>
+                        <div class="menu-card-price">Ksh 500</div>
+                    </div>
+                </div>
+                <div class="menu-item-card">
+                    <img class="menu-card-image" src="orkun-orcan-wkms_RlOuDU-unsplash.jpg" alt="Chapati: Wheat flatbread served with a variety of stews" loading="lazy">
+                    <div class="menu-card-body">
+                        <div class="menu-card-title">Chapati</div>
+                        <div class="menu-card-desc">Comrades' favorite made from wheat flour, served with a variety of stews.</div>
+                        <div class="menu-card-price">Ksh 50</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-enhanced">
+        <div class="footer-content">
+            <div class="footer-logo-contact">
+                <img src="logoI.png" alt="Villa Rosa Kibandaski Logo" class="footer-logo">
+                <div class="footer-contact">
+                    <a href="mailto:info@kibandaski.com"><span class="footer-icon">📧</span> info@kibandaski.com</a>
+                    <a href="tel:+2541234567890"><span class="footer-icon">📞</span> +254 705 976 736</a>
+                </div>
+            </div>
+            <small class="footer-copyright">&copy; 2025 Villa Rosa Kibandaski. All rights reserved.</small>
+        </div>
+    </footer>
+    <script>
+    // Hamburger menu toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    navToggle.addEventListener('click', function() {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', !expanded);
+        navMenu.classList.toggle('open');
+    });
+    </script>
+</body>
+</html>
